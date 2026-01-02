@@ -1,0 +1,25 @@
+.main-header .nav-menu li {
+    display: inline-block;
+}
+
+.main-header .nav-menu ul {
+    padding: 0;
+}
+
+.main-header .nav-menu ul li.dropdown {
+    position: relative;
+}
+
+.main-header .nav-menu ul li.dropdown>ul {
+    display: none;
+}
+
+.main-header .nav-menu ul li.dropdown:hover>ul {
+    display: block;
+}
+
+.main-header .nav-menu ul li.dropdown:hover>ul li {
+    display: block;
+    position: absolute;
+    top: 100%;
+}
