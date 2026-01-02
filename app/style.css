@@ -1,0 +1,40 @@
+:root{
+    --primary:#8E57E9;
+}
+
+
+.HeroSection {
+    background-color: #fff;
+    padding: 40px 0 50px;
+}
+
+.HeroSection h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.HeroSection p {
+    font-size: 16px;
+    line-height: 1.7em;
+    font-family: 'poppins';
+}
+
+.HeroSection Button {
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.HeroSection Button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.HeroSection img {
+    height: auto;
+    max-width: 80%;
+}

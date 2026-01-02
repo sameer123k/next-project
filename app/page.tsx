@@ -1,6 +1,13 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import { Box, Container } from '@mui/material';
+import Grid from '@mui/material/GridLegacy';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Link from 'next/link';
+import heroimage from '@/app/assets/images/hero.png';
+import { Metadata } from 'next';
+import Image from 'next/image';
+import "./style.css";
 
 export const metadata: Metadata = {
   title: "Index Page | Next Application",
@@ -16,33 +23,24 @@ export default function Home() {
 
   return (
     <>
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Build Faster. Launch Smarter.</h1>
-          <p>
-            Create responsive, SEO-friendly web applications with clean design,
-            powerful performance, and scalable architecture.
-          </p>
-
-          <div className="hero-actions">
-            <a href="#" className="btn-primary">Get Started</a>
-            <a href="#" className="btn-secondary">Open Modal</a>
-          </div>
-        </div>
-
-        <div className="hero-image">
-          <img src="https://png.pngtree.com/png-vector/20240310/ourmid/pngtree-business-partnership-connection-isometric-png-image_11926892.png" alt="Dashboard Preview" />
-        </div>
-      </section>
-
-      {/* modal */}
-      <div className="modal">
-        <a href="#">X</a>
-        <input type="text" placeholder="Enter Name" />
-        <input type="email" placeholder="Email" />
-        <input type="number" placeholder="Phone Number" />
-        <input type="submit" />
-      </div>
+      <Box className="HeroSection">
+            <Container>
+                <Grid container sx={{
+                    alignItems: 'center',
+                }}>
+                    <Grid item xs={12} sm={12} md={8} lg={8} xl={8} xxl={8}>
+                        <h2>Hero Section Heading</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis deleniti praesentium assumenda voluptate mollitia ut nihil voluptas magnam perspiciatis, quos vitae sit deserunt omnis doloribus asperiores incidunt ipsa laborum.
+                        </p>
+                        <Button><Link href="/about">ReadMore</Link></Button>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4} xxl={4}>
+                        <Image src={heroimage} alt="hero image" />
+                    </Grid>
+                </Grid>
+            </Container >
+        </Box >
     </>
   );
 }
