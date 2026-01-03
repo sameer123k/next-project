@@ -5,77 +5,77 @@ import Grid from '@mui/material/GridLegacy';
 import Container from '@mui/material/Container';
 import Image from 'next/image';
 import Logo from "@/app/assets/images/logo.jpg";
+import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
 
 export default function footer() {
     return (
         <Box className={styles.footer}>
-            <Container >
+            <Container>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}>
-                        <div className={styles.footer_left}>
-
-                            <div className={styles.footerLogo}>
-                                <Image src={Logo} alt="logo" />
-                            </div>
-
-                            <p className={styles.footer_links}>
-                                <span className="link-1">Home</span>
-
-                                <span>Blog</span>
-
-                                <span>Pricing</span>
-
-                                <span>About</span>
-
-                                <span>Faq</span>
-
-                                <span>Contact</span>
+                    <Grid item xs={4}>
+                        <div className={styles.widget1}>
+                            <a href="index.html">
+                                <Image src={Logo} alt="footer logo" />
+                            </a>
+                            <p>
+                                Sk Services offers a comprehensive range of convenient solutions to meet your everyday needs. Specializing in mobile and DTH recharges, Skensures seamless connectivity and entertainment.
                             </p>
-                            <p>Company Name © 2015</p>
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}>
-                        <div className={styles.footer_center}>
+                    <Grid item xs={2}>
+                        <div className={styles.widget2}>
+                            <h3>Useful Link</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="privacy.html">Privacy policy </a></li>
+                            </ul>
+                        </div>
+                    </Grid>
+                    <Grid item xs={2}>
+                        <div className={styles.widget2}>
+                            <h3>Useful Link</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="privacy.html">Privacy policy </a></li>
+                            </ul>
+                        </div>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <div className={styles.widget3}>
+                            <h3>Get in Touch</h3>
 
-                            <div>
-                                <i className="fa fa-map-marker"></i>
-                                <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
-                            </div>
-
-                            <div>
-                                <i className="fa fa-phone"></i>
-                                <p>+1.555.555.5555</p>
-                            </div>
-
-                            <div>
-                                <i className="fa fa-envelope"></i>
-                                <p><a href="mailto:support@company.com">support@company.com</a></p>
-                            </div>
+                            <ul >
+                                <li>
+                                    <AddLocationAltIcon />
+                                    <p>  Jhotwara , Jaipur, Rajasthan, India, 302006</p>
+                                </li>
+                                <li>
+                                    <CallIcon />
+                                    <p> +91 9876543210</p>
+                                </li>
+                                <li>
+                                    <EmailIcon />
+                                    <p>  hello121@gmail.com</p>
+                                </li>
+                            </ul>
 
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}>
-                        <div className={styles.footer_right}>
-
-                            <p className="footer-company-about">
-                                <span>About the company</span>
-                                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-                            </p>
-
-                            <div className="footer-icons">
-
-                                <span><i className="fa fa-facebook"></i></span>
-                                <span><i className="fa fa-twitter"></i></span>
-                                <span><i className="fa fa-linkedin"></i></span>
-                                <span><i className="fa fa-github"></i></span>
-
-                            </div>
-
+                    <Grid item xs={12}>
+                        <div className={styles.copyright}>
+                            <p>© 2026 Sk Creation , Powered by <a href="#">Businesses Through Technology</a> </p>
                         </div>
                     </Grid>
                 </Grid>
             </Container>
-            <Box className={styles.footercopy}>&copy; 2025 abc.com | All Rights Reserved </Box>
         </Box>
     )
 }

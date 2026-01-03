@@ -105,16 +105,65 @@
     padding: 30px 0 0;
 }
 
-.footer .footercopy {
-    text-align: center;
-    background-color: var(--primary);
-    padding: 5px;
-    color: #fff;
-    margin-top: 20px;
-}
-
-.footer .footerLogo img{
-    height: 70px;
+.footer .widget1 img {
+    height: 80px;
     width: auto;
     mix-blend-mode: darken;
+}
+
+.footer .widget1 p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'poppins'
+}
+
+.footer .widget2 ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footer .widget2 ul li {
+    padding: 4px 0;
+}
+
+.footer .widget2 ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer .widget3 ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footer .widget3 ul li {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'poppins';
+    padding: 4px 0;
+}
+
+.footer .widget3 ul li svg {
+    padding-right: 5px;
+}
+
+.footer .widget3 ul li p {
+    margin: 0;
+    display: inline;
+}
+
+.footer .widget3 ul li svg path {
+    fill: #2c2c2c;
+}
+
+.footer .widget3 ul li .footer .copyright {
+    border-top: 1px solid #afafaf;
+}
+
+.footer .copyright p {
+    text-align: center;
+}
+
+.footer .copyright p a {
+    text-decoration: none;
 }

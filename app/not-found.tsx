@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from 'react';
+import Image from 'next/image';
+import Notfound from '@/app/assets/images/not-found.jpg';
+import './style.css';
 export default function notfound() {
     return (
-        <div>
-            Not Found
+        <div className="notfound">
+            <Image src={Notfound} alt="not found" />
         </div>
     )
 }

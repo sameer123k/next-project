@@ -47,3 +47,10 @@
     color: #000;
     text-decoration: none;
 }
+.notfound{
+    text-align: center;
+}
+.notfound img{
+    height: 400px;
+    width: auto;
+}
