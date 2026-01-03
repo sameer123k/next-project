@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function contact() {
     return (
@@ -21,6 +21,7 @@ export default function contact() {
                         Feel free to contact us for inquiries, project discussions,
                         or any questions you may have.
                     </p>
+                    <iframe src="https://maps.google.com/maps?q=jaipur&output=embed" width="100%" height="250"></iframe>
                 </div>
 
                 <div className="contact-form">

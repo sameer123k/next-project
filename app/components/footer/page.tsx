@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import styles from '@/app/components/header.module.css';
 import Grid from '@mui/material/GridLegacy';
 import Container from '@mui/material/Container';
+import Image from 'next/image';
+import Logo from "@/app/assets/images/logo.jpg";
 
 export default function footer() {
     return (
@@ -12,7 +14,9 @@ export default function footer() {
                     <Grid item xs={12} sm={12} md={6} lg={4} xl={4} xxl={4}>
                         <div className={styles.footer_left}>
 
-                            <h3>Company<span>logo</span></h3>
+                            <div className={styles.footerLogo}>
+                                <Image src={Logo} alt="logo" />
+                            </div>
 
                             <p className={styles.footer_links}>
                                 <span className="link-1">Home</span>

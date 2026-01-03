@@ -1,5 +1,5 @@
-:root{
-    --primary:#8E57E9;
+:root {
+    --primary: #8E57E9;
 }
 
 
@@ -37,4 +37,13 @@
 .HeroSection img {
     height: auto;
     max-width: 80%;
+}
+
+.login-container button[type="submit"] {
+    background-color: #7849C4;
+}
+
+.login-container .login-links a {
+    color: #000;
+    text-decoration: none;
 }

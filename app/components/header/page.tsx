@@ -40,9 +40,9 @@ export default function Header() {
                         <ul className={isNavOpen ? styles.navActive : ''}>
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/about">About Us</Link></li>
-                            <li><Link href="/">Services</Link></li>
-                            <li><Link href="/">Contact Us</Link></li>
-                            <li className={styles.registerBtn}><Link href="/">Register Now</Link></li>
+                            <li><Link href="/services">Services</Link></li>
+                            <li><Link href="/contact">Contact Us</Link></li>
+                            <li className={styles.registerBtn}><Link href="/login">Login / Register</Link></li>
                             <li className={styles.quote}><Link href="/">Request A Quote</Link></li>
                         </ul>
                         <Button onClick={toggleNav}> <DensityMediumIcon />  </Button>
