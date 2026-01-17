@@ -509,3 +509,14 @@ body {
   border: none;
   border-radius: 3px;
 }
+
+.whatsappImage {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.whatsappImage img {
+  height: 60px;
+  width: auto;
+}

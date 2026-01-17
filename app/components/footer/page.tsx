@@ -14,7 +14,7 @@ export default function footer() {
         <Box className={styles.footer}>
             <Container>
                 <Grid container spacing={2}>
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4} lg={4} xl={4} xxl={4}>
                         <div className={styles.widget1}>
                             <a href="index.html">
                                 <Image src={Logo} alt="footer logo" />
@@ -24,7 +24,7 @@ export default function footer() {
                             </p>
                         </div>
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} sm={6} md={2} lg={2} xl={2} xxl={2}>
                         <div className={styles.widget2}>
                             <h3>Useful Link</h3>
                             <ul>
@@ -36,7 +36,7 @@ export default function footer() {
                             </ul>
                         </div>
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} sm={6} md={2} lg={2} xl={2} xxl={2}>
                         <div className={styles.widget2}>
                             <h3>Useful Link</h3>
                             <ul>
@@ -48,7 +48,7 @@ export default function footer() {
                             </ul>
                         </div>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4} lg={4} xl={4} xxl={4}>
                         <div className={styles.widget3}>
                             <h3>Get in Touch</h3>
 
@@ -69,7 +69,7 @@ export default function footer() {
 
                         </div>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
                         <div className={styles.copyright}>
                             <p>© 2026 Sk Creation , Powered by <a href="#">Businesses Through Technology</a> </p>
                         </div>

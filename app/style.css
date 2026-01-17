@@ -13,6 +13,12 @@
     font-size: 30px;
 }
 
+.HeroSection h2 b {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .HeroSection p {
     font-size: 16px;
     line-height: 1.7em;
@@ -47,10 +53,62 @@
     color: #000;
     text-decoration: none;
 }
-.notfound{
+
+.notfound {
     text-align: center;
 }
-.notfound img{
+
+.notfound img {
     height: 400px;
     width: auto;
+}
+
+.HeroSection .connectNow {
+    margin-left: 20px;
+    border: 1px solid #110B1C;
+    background-color: transparent;
+}
+
+.HeroSection .connectNow:hover {
+    background-color: #000;
+}
+
+.HeroSection .connectNow a {
+    color: #000;
+}
+
+.HeroSection .connectNow:hover a {
+    color: #fff;
+}
+
+.calculationDiv {
+    background: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    box-shadow: rgb(0 0 0 / .15) 0 15px 25px, rgb(0 0 0 / .05) 0 5px 10px;
+    padding: 15px 0
+}
+
+.calculationDiv .outer {
+    display: flex;
+    gap: 10px;
+    border-right: 1px solid var(--primary);
+    padding: 0 5px 0 0;
+    margin: 0 10px;
+}
+
+.calculationDiv .outer img {
+    object-fit: contain;
+    filter: grayscale(100%)
+}
+
+.calculationDiv .outer .contri {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--primary)
+}
+
+.calculationDiv .outer .contri span {
+    font-weight: 500;
+    color: #232323;
+    font-size: 14px;
+    font-family: "poppins"
 }
