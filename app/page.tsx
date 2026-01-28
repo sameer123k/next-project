@@ -13,6 +13,7 @@ import country from '@/app/assets/images/countries.jpg';
 import award from '@/app/assets/images/customer-choice-award.jpg';
 import client from '@/app/assets/images/satisfied-clients.jpg';
 import experience from '@/app/assets/images/it-experience.jpg';
+import Slider from "@/app/home/slider/page"
 
 export const metadata: Metadata = {
     title: "Index Page | Next Application",
@@ -42,9 +43,7 @@ export default function Home() {
                             <Button className='connectNow'><Link href="/contact">Connect Now</Link></Button>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} lg={4} xl={4} xxl={4}>
-                            <div className="heroImage">
-                                <Image src={heroimage} alt="hero image" />
-                            </div>
+                            <Slider />
                         </Grid>
                     </Grid>
                 </Container >

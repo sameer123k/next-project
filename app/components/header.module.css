@@ -71,10 +71,29 @@
         display: none;
     }
 
+    .header img {
+        height: 40px;
+        padding-top: 10px;
+        width: auto;
+        mix-blend-mode: darken;
+    }
+
+    .header .searchBox input {
+        font-size: 12px;
+    }
+
+    .header .searchBox svg {
+        padding: 2px 5px;
+    }
+
+    body .header button {
+        margin: 10px 0;
+    }
+
     ul.navActive {
         display: block;
         position: absolute;
-        top: 50px;
+        top: 90px;
         left: 0;
         background: #fff;
         padding: 0px 10px 20px 10px;
@@ -166,4 +185,39 @@
 
 .footer .copyright p a {
     text-decoration: none;
+}
+
+.searchBox {
+    border: 1px solid #dddddd;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 3px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.searchBox input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 4px 8px;
+}
+
+.searchBox input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.searchBox svg path {
+    fill: #fff;
+}
+
+.searchBox svg {
+    background-color: var(--primary);
+    padding: 4px 8px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
