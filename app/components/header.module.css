@@ -25,6 +25,7 @@
 .header ul li a {
     text-decoration: none;
     color: #000;
+    font-family: 'system-ui';
 }
 
 .header ul li.quote a {
