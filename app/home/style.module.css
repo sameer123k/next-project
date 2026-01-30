@@ -1,0 +1,47 @@
+:root {
+    --primary: #8753DD;
+}
+
+.productDiv img {
+    height: 200px;
+    width: 100%;
+    background-color: #F0F0F0;
+    object-fit: contain;
+}
+
+.productDiv h3 {
+    margin: 0 0 8px 0;
+    font-size: 19px;
+}
+
+.productDiv p {
+    margin: 0;
+    color: rgb(48, 48, 48);
+    line-height: 1.5;
+    font-size: 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.productDiv .Btns {
+    padding: 5px 15px 15px;
+}
+
+.productDiv .Btns button {
+    border: 1px solid #000;
+    font-size: 12px;
+    color: black;
+    padding: 5px 15px 3px;
+}
+
+.productDiv .Btns button:nth-child(1) {
+    margin-right: 10px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.productDiv .Content {
+    padding: 10px 15px 5px;
+}
