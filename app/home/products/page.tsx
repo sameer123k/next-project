@@ -33,8 +33,11 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Products() {
     return (
-        <Box sx={{ flexGrow: 1, paddingBottom: 5 }}>
+        <Box sx={{ flexGrow: 1, paddingBottom: 5 }} className={Styles.Products}>
             <Grid container spacing={3}>
+                <Grid item xs={12}>
+                    <h3> Our Latest Products </h3>
+                </Grid>
                 <Grid item xs={3}>
                     <Card className={Styles.productDiv}>
                         <Image src={Shoes} alt="shoes"></Image>

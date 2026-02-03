@@ -7,9 +7,15 @@
     width: 100%;
     background-color: #F0F0F0;
     object-fit: contain;
+    transition: all .2s ease-in;
 }
 
-.productDiv h3 {
+.productDiv img:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in;
+}
+
+.Products .productDiv h3 {
     margin: 0 0 8px 0;
     font-size: 19px;
 }
@@ -44,4 +50,9 @@
 
 .productDiv .Content {
     padding: 10px 15px 5px;
+}
+
+.Products h3 {
+    text-align: center;
+    font-size: 25px;
 }
