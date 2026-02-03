@@ -34,13 +34,13 @@ export default function Home() {
                     <Grid container sx={{
                         alignItems: 'center',
                     }}>
-                        <Grid item xs={12} sm={12} md={7} lg={7} xl={7} xxl={7}>
+                        <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
                             <h2> Quality You Can Trust. <b>Prices You’ll Love.</b></h2>
                             <p>
                                 Discover trending products curated just for you — fast shipping, easy returns.    </p>
                             <Button className='connectNow'><Link href="/contact">Explore More</Link></Button>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={5} lg={5} xl={5} xxl={5}>
+                        <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
                             <Slider />
                         </Grid>
                     </Grid>
