@@ -15,6 +15,7 @@ import client from '@/app/assets/images/satisfied-clients.jpg';
 import experience from '@/app/assets/images/it-experience.jpg';
 import Slider from "@/app/home/slider/page";
 import Products from "@/app/home/products/page";
+import Category from "@/app/home/Category/page";
 
 export const metadata: Metadata = {
     title: "Index Page | Next Application",
@@ -52,6 +53,16 @@ export default function Home() {
                     <Grid container>
                         <Grid item md={12}>
                             <Products />
+                        </Grid>
+                    </Grid>
+                </Container>
+            </Box>
+
+            <Box>
+                <Container>
+                    <Grid container>
+                        <Grid item md={12}>
+                            <Category />
                         </Grid>
                     </Grid>
                 </Container>
