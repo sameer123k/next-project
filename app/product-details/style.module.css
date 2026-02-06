@@ -1,0 +1,115 @@
+.productDetails {
+    padding: 20px 0;
+}
+
+.productDetails .productContent h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.productDetails .productContent p {
+    font-size: 15px;
+    font-family: 'poppins';
+    line-height: 1.7;
+}
+
+.productDetails .productContent .size {
+    margin: 0;
+}
+
+.productDetails .productContent .size h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.productDetails .productContent .size h6 span {
+    font-size: 14px;
+    color: forestgreen;
+}
+
+.productDetails .productContent .size select {
+    padding: 3px 5px;
+    font-size: 15px;
+}
+
+.productDetails .productImg .subimages {
+    text-align: center;
+}
+
+.productDetails .productImg .MainImg img {
+    transition: all .2s ease-in;
+    height: 100%;
+    width: auto;
+}
+
+.productDetails .productImg .MainImg img:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in;
+}
+
+.productDetails .productImg .subimages {
+    max-height: 430px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+}
+
+.productDetails .productImg .subimages img {
+    height: 100px;
+    width: auto;
+    background-color: #f0f0f0;
+}
+
+.productDetails .productContent .deliverydetails {
+    margin: 15px 0;
+}
+
+.productDetails .productContent .deliverydetails h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.productDetails .productContent .deliverydetails .delivery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #EEF7FF;
+    padding: 5px 10px;
+}
+
+.productDetails .productContent .deliverydetails .delivery h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+
+.productDetails .productContent .deliverydetails .delivery svg path {
+    fill: #8854DF;
+}
+
+.productDetails .productContent .deliverydetails .delivery a {
+    font-size: 14px;
+    text-decoration: none;
+    color: forestgreen;
+    font-weight: 600;
+}
+
+.productDetails .productContent .deliverydetails .Btns {
+    padding: 15px 0;
+}
+
+.productDetails .productContent .deliverydetails .Btns Button:nth-child(1) {
+    background-color: #7C4CCC;
+    color: white;
+    padding: 5px 15px;
+}
+
+.productDetails .productContent .deliverydetails .Btns Button:nth-child(2) {
+    border: 1px solid #7C4CCC;
+    color: #7C4CCC;
+    padding: 5px 15px;
+    margin: 0 15px 0;
+}

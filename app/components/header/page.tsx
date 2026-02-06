@@ -49,7 +49,7 @@ export default function Header() {
                     <Grid item xs={2} sm={2} md={4} lg={4} xl={4}>
                         <ul className={isNavOpen ? styles.navActive : ''}>
                             <li><Link href="/">Home</Link></li>
-                            <li><Link href="/about">Store</Link></li>
+                            <li><Link href="/cart">Store</Link></li>
                             <li><Link href="/services">
                                 <Badge badgeContent={3} color="secondary">
                                     <AddShoppingCartIcon />

@@ -13,6 +13,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Image from "next/image";
+import Link from "next/link";
 
 // products 
 import Shoes from "@/app/assets/images/products/shoes.png";
@@ -106,7 +107,7 @@ export default function Products() {
                                 </CardContent>
                                 <CardActions className={Styles.Btns}>
                                     <Button size="small">Add To Cart</Button>
-                                    <Button size="small">Buy Now</Button>
+                                    <Button size="small"><Link href="product-details">Buy Now</Link></Button>
                                 </CardActions>
                             </Card>
                         </Grid>
