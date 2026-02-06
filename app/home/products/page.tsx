@@ -19,161 +19,100 @@ import Shoes from "@/app/assets/images/products/shoes.png";
 import Airpods from "@/app/assets/images/products/airpods.png";
 import Headphone from "@/app/assets/images/products/headphone.png";
 import Jackets from "@/app/assets/images/products/jackets.png";
+import Sunglasses from "@/app/assets/images/products/sunglasses.png";
+import helmet from "@/app/assets/images/products/helmet.png";
+import watches from "@/app/assets/images/products/watches.png";
+import shirts from "@/app/assets/images/products/shirts.png";
 
 const Item = styled(Paper)(({ theme }) => ({
-    // backgroundColor: '#fff',
-    // ...theme.typography.body2,
-    // padding: theme.spacing(1),
-    // textAlign: 'center',
-    // color: (theme.vars ?? theme).palette.text.secondary,
-    // ...theme.applyStyles('dark', {
-    //     backgroundColor: '#1A2027',
-    // }),
+
 }));
 
 export default function Products() {
+
+    const products = [
+        {
+            image: Shoes,
+            price: "699",
+            title: ' Branded Shoes',
+            description: 'Sneakers For Men (Orange, White , 9)',
+        },
+        {
+            image: Airpods,
+            price: "849",
+            title: 'Boat Headphone',
+            description: 'Airdopes 161/163,ASAP Charge,40 H Battery',
+        },
+        {
+            image: Headphone,
+            price: "1449",
+            title: ' Realme Headphone',
+            description: 'TechLife Studio H1 with 43dB ANC, Hi-Res Audio',
+        },
+        {
+            image: Jackets,
+            price: "2299",
+            title: 'Mens Leather Jackets',
+            description: 'Men Solid Biker/Riding Jacket',
+        },
+        {
+            image: Sunglasses,
+            price: "399",
+            title: 'Mens Sunglasses',
+            description: 'Riding Glasses, Toughened Glass Lens',
+        },
+        {
+            image: helmet,
+            price: "1799",
+            title: 'Steelbird Helmet',
+            description: 'SBH-23 Hunter ISI Certified Open Face Helmet',
+        },
+        {
+            image: watches,
+            price: "799",
+            title: 'Analogue Watch',
+            description: 'Minimalist Slim Series | Smart Watch Strap',
+        },
+        {
+            image: shirts,
+            price: "449",
+            title: 'Mens Shirts',
+            description: 'Men Slim Fit Checkered Spread Collar Casual Shirt (Pack of 2)',
+        },
+    ]
+
     return (
+
         <Box sx={{ flexGrow: 1, paddingBottom: 5 }} className={Styles.Products}>
-            <Grid container spacing={3}>
-                <Grid item xs={12}>
+            <Grid container spacing={4}>
+                <Grid item md={12}>
                     <h3> Our Latest Products </h3>
                 </Grid>
-                <Grid item xs={3}>
-                    <Card className={Styles.productDiv}>
-                        <Image src={Shoes} alt="shoes"></Image>
-                        <CardContent className={Styles.Content}>
-                            <h3>
-                                Branded Shoes
-                            </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                            </p>
-                        </CardContent>
-                        <CardActions className={Styles.Btns}>
-                            <Button size="small">Add To Cart</Button>
-                            <Button size="small">Buy Now</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item xs={3}>
-                    <Card className={Styles.productDiv}>
-                        <Image src={Headphone} alt="headphone"></Image>
-                        <CardContent className={Styles.Content}>
-                            <h3>
-                                Boat Headphone
-                            </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                            </p>
-                        </CardContent>
-                        <CardActions className={Styles.Btns}>
-                            <Button size="small">Add To Cart</Button>
-                            <Button size="small">Buy Now</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item xs={3}>
-                    <Card className={Styles.productDiv}>
-                        <Image src={Airpods} alt="Airpods"></Image>
-                        <CardContent className={Styles.Content}>
-                            <h3>
-                                Realme Aipods
-                            </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                            </p>
-                        </CardContent>
-                        <CardActions className={Styles.Btns}>
-                            <Button size="small">Add To Cart</Button>
-                            <Button size="small">Buy Now</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item xs={3}>
-                    <Card className={Styles.productDiv}>
-                        <Image src={Jackets} alt="Jackets"></Image>
-                        <CardContent className={Styles.Content}>
-                            <h3>
-                                Men's Leather Jackets
-                            </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                            </p>
-                        </CardContent>
-                        <CardActions className={Styles.Btns}>
-                            <Button size="small">Add To Cart</Button>
-                            <Button size="small">Buy Now</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item xs={3}>
-                    <Card className={Styles.productDiv}>
-                        <Image src={Shoes} alt="shoes"></Image>
-                        <CardContent className={Styles.Content}>
-                            <h3>
-                                Branded Shoes
-                            </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                            </p>
-                        </CardContent>
-                        <CardActions className={Styles.Btns}>
-                            <Button size="small">Add To Cart</Button>
-                            <Button size="small">Buy Now</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item xs={3}>
-                    <Card className={Styles.productDiv}>
-                        <Image src={Headphone} alt="headphone"></Image>
-                        <CardContent className={Styles.Content}>
-                            <h3>
-                                Boat Headphone
-                            </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                            </p>
-                        </CardContent>
-                        <CardActions className={Styles.Btns}>
-                            <Button size="small">Add To Cart</Button>
-                            <Button size="small">Buy Now</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item xs={3}>
-                    <Card className={Styles.productDiv}>
-                        <Image src={Airpods} alt="Airpods"></Image>
-                        <CardContent className={Styles.Content}>
-                            <h3>
-                                Realme Aipods
-                            </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                            </p>
-                        </CardContent>
-                        <CardActions className={Styles.Btns}>
-                            <Button size="small">Add To Cart</Button>
-                            <Button size="small">Buy Now</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid item xs={3}>
-                    <Card className={Styles.productDiv}>
-                        <Image src={Jackets} alt="Jackets"></Image>
-                        <CardContent className={Styles.Content}>
-                            <h3>
-                                Men's Leather Jackets
-                            </h3>
-                            <p>
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                            </p>
-                        </CardContent>
-                        <CardActions className={Styles.Btns}>
-                            <Button size="small">Add To Cart</Button>
-                            <Button size="small">Buy Now</Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
+                {products.map((res, index) => {
+                    return (
+                        <Grid item xs={3} key={index}>
+                            <Card className={Styles.productDiv}>
+                                <Image src={res.image} alt="shoes" width={200} height={100}></Image>
+                                <CardContent className={Styles.Content}>
+                                    <h5>
+                                        &#8377;  {res.price} /-
+                                    </h5>
+                                    <h3>
+                                        {res.title}
+                                    </h3>
+                                    <p>
+                                        {res.description}
+                                    </p>
+                                </CardContent>
+                                <CardActions className={Styles.Btns}>
+                                    <Button size="small">Add To Cart</Button>
+                                    <Button size="small">Buy Now</Button>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                    )
+                })}
+
             </Grid>
         </Box>
     );

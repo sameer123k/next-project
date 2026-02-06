@@ -15,7 +15,7 @@ import client from '@/app/assets/images/satisfied-clients.jpg';
 import experience from '@/app/assets/images/it-experience.jpg';
 import Slider from "@/app/home/slider/page";
 import Products from "@/app/home/products/page";
-import Category from "@/app/home/Category/page";
+import Category from "@/app/home/category/page";
 
 export const metadata: Metadata = {
     title: "Index Page | Next Application",
@@ -37,8 +37,7 @@ export default function Home() {
                     }}>
                         <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
                             <h2> Quality You Can Trust. <b>Prices You’ll Love.</b></h2>
-                            <p>
-                                Discover trending products curated just for you — fast shipping, easy returns.    </p>
+                            <p>Shop trending products curated just for you — enjoy fast shipping and easy, worry-free returns  </p>
                             <Button className='connectNow'><Link href="/contact">Explore More</Link></Button>
                         </Grid>
                         <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>

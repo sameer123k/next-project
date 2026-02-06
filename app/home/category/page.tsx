@@ -1,23 +1,24 @@
+"use client";
 import React from 'react';
 import Styles from "../style.module.css";
-import { Box } from '@mui/material';
-import Grid from '@mui/material/GridLegacy';
-import Image from 'next/image';
-import jeans from '@/app/assets/images/products/jeans.png';
-import shirts from '@/app/assets/images/products/shirts.png';
-import sandals from '@/app/assets/images/products/sandals.png';
-import watch from '@/app/assets/images/products/watches.png';
-import sunglass from '@/app/assets/images/products/sunglasses.png';
-import airpods from '@/app/assets/images/products/airpods2.png';
-import formal from '@/app/assets/images/products/formal.png';
-import iphone from '@/app/assets/images/products/iphone.webp';
-import beauty from '@/app/assets/images/products/beauty.png';
-import led from '@/app/assets/images/products/led.png';
-import helmet from '@/app/assets/images/products/helmet.png';
-import cable from '@/app/assets/images/products/cable.png';
-import cover from '@/app/assets/images/products/cover.png';
+import { Box } from "@mui/material";
+import Grid from "@mui/material/GridLegacy";
+import Image from "next/image";
+import jeans from "@/app/assets/images/products/jeans.png";
+import shirts from "@/app/assets/images/products/shirts.png";
+import sandals from "@/app/assets/images/products/sandals.png";
+import watch from "@/app/assets/images/products/watches.png";
+import sunglass from "@/app/assets/images/products/sunglasses.png";
+import airpods from "@/app/assets/images/products/airpods2.png";
+import formal from "@/app/assets/images/products/formal.png";
+import iphone from "@/app/assets/images/products/iphone.webp";
+import beauty from "@/app/assets/images/products/beauty.png";
+import led from "@/app/assets/images/products/led.png";
+import helmet from "@/app/assets/images/products/helmet.png";
+import cable from "@/app/assets/images/products/cable.png";
+import cover from "@/app/assets/images/products/cover.png";
 
-export default function page() {
+export default function Page() {
     return (
         <Box sx={{ flexGrow: 1, paddingBottom: 5 }} className={Styles.Category}>
             <Grid container spacing={2}>
