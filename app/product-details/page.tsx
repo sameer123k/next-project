@@ -71,8 +71,9 @@ export default function page() {
             <Box>
                 <Container>
                     <Grid container>
-                        <Grid item md={12}></Grid>
-                        <Products />
+                        <Grid item md={12}>
+                              <Products />
+                        </Grid>                      
                     </Grid>
                 </Container>
             </Box>

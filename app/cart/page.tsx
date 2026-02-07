@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { Container, Grid, Button } from '@mui/material';
+import { Container, Button } from '@mui/material';
+import Grid from '@mui/material/GridLegacy';
 import Styles from "./style.module.css";
 import Shoes from "@/app/assets/images/products/shoes.png";
 import Headphone from "@/app/assets/images/products/headphone.png";
@@ -86,8 +87,8 @@ export default function page() {
                                 </p>
                             </Box>
                             <Box>
-                                <strong>You will save ₹ <span>234.08</span> 
-                                     on this order</strong>
+                                <strong>You will save ₹ <span>234.08</span>
+                                    on this order</strong>
                             </Box>
                             <Box>
                                 <p className={Styles.Button}>Place Order</p>
