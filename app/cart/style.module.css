@@ -1,0 +1,134 @@
+.cartPage {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.cartPage .product {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0 0 20px;
+}
+
+.cartPage .product .productImg img {
+    height: 180px;
+    width: auto;
+    flex-basis: 30%;
+}
+
+.cartPage .product .ProductInner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cartPage .product .productDetails {
+    flex-basis: 70%;
+}
+
+.cartPage .product .productDetails h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.cartPage .product .productDetails p {
+    margin: 0;
+    font-size: 15px;
+    color: #202020;
+}
+
+.cartPage .product .productDetails h2 {
+    margin: 15px 0;
+}
+
+.cartPage .product .productDetails .counter {
+    background-color: #fff;
+    padding: 4px 0;
+    width: fit-content;
+}
+
+.cartPage .product .productDetails .counter span {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cartPage .product button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cartPage .cartPricing {
+    background-color: #f0f0f0;
+    padding: 25px;
+}
+
+.cartPage .cartPricing .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.cartPage .cartPricing h4 {
+    margin: 0 0 16px;
+    border-bottom: 1px solid #a1a1a1;
+    padding-bottom: 5px;
+}
+
+.cartPage .cartPricing .price h5 {
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.cartPage .cartPricing .price p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cartPage .cartPricing .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #a1a1a1;
+    padding: 3px 0;
+    margin: 8px 0 0;
+}
+
+.cartPage .cartPricing .total h5 {
+    margin: 7px 0;
+    font-size: 16px;
+}
+
+.cartPage .cartPricing .total p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cartPage .cartPricing strong {
+    font-size: 13px;
+    color: green;
+}
+
+.cartPage .cartPricing .Button {
+    border: 1px solid #8350D6;
+    color: #8350D6;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all .3s ease-in;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cartPage .cartPricing .Button:hover {
+    background-color: #8350D6;
+    color: #fff;
+    transition: all .3s ease-in;
+}
