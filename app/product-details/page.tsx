@@ -6,6 +6,7 @@ import Shoes from "@/app/assets/images/products/shoes.png";
 import Styles from "./style.module.css";
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import Products from "@/app/home/products/page";
+import Link from "next/link";
 export default function page() {
 
     return (
@@ -51,7 +52,7 @@ export default function page() {
                                 </blockquote>
                                 <blockquote className={Styles.deliverydetails}>
                                     <Box className={Styles.Btns}>
-                                        <Button>Add to Cart</Button>
+                                        <Button><Link href="/cart">Add to Cart</Link></Button>
                                         <Button>Buy Now</Button>
                                     </Box>
                                     <h6>Delivery Details </h6>
@@ -72,8 +73,8 @@ export default function page() {
                 <Container>
                     <Grid container>
                         <Grid item md={12}>
-                              <Products />
-                        </Grid>                      
+                            <Products />
+                        </Grid>
                     </Grid>
                 </Container>
             </Box>

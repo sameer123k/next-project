@@ -103,9 +103,14 @@
 
 .productDetails .productContent .deliverydetails .Btns Button:nth-child(1) {
     background-color: #7C4CCC;
-    color: white;
     padding: 5px 15px;
 }
+
+.productDetails .productContent .deliverydetails .Btns Button:nth-child(1) a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .productDetails .productContent .deliverydetails .Btns Button:nth-child(2) {
     border: 1px solid #7C4CCC;
