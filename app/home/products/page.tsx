@@ -106,7 +106,7 @@ export default function Products() {
                                     </p>
                                 </CardContent>
                                 <CardActions className={Styles.Btns}>
-                                    <Button size="small">Add To Cart</Button>
+                                    <Button size="small"><Link href="cart">Add To Cart</Link></Button>
                                     <Button size="small"><Link href="product-details">Buy Now</Link></Button>
                                 </CardActions>
                             </Card>

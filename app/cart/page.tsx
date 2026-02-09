@@ -6,6 +6,7 @@ import Styles from "./style.module.css";
 import Shoes from "@/app/assets/images/products/shoes.png";
 import Headphone from "@/app/assets/images/products/headphone.png";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function page() {
     return (
@@ -91,7 +92,7 @@ export default function page() {
                                     on this order</strong>
                             </Box>
                             <Box>
-                                <p className={Styles.Button}>Place Order</p>
+                                <button className={Styles.Button}><Link href="payment">Place Order</Link></button>
                             </Box>
                         </Box>
                     </Grid>
