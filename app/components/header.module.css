@@ -25,7 +25,8 @@
 .header ul li a {
     text-decoration: none;
     color: #000;
-    font-family: 'system-ui';
+    font-family: 'poppins';
+    font-size: 14px;
 }
 
 .header ul li.quote a {
@@ -49,7 +50,7 @@
     transition: all .3s ease-in;
 }
 
-.header button {
+.header .toggleBtn {
     display: none;
 }
 
@@ -57,6 +58,11 @@
     background: linear-gradient(45deg, #8e57e9, #000000);
     padding: 10px 0;
     text-align: center;
+}
+
+.header .accountBtn button {
+    color: black;
+    font-family: 'poppins';
 }
 
 .header .headerTop h6 {
@@ -112,7 +118,7 @@
         background-color: #f0f0f0;
     }
 
-    .header button {
+    .header .toggleBtn {
         float: right;
         display: block;
         margin: 10px;

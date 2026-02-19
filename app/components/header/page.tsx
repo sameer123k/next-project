@@ -11,12 +11,14 @@ import Logo from '@/app/assets/images/logo.jpg';
 import Link from 'next/link';
 import styles from '@/app/components/header.module.css';
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
-import { Button } from '@mui/material';
+import { Button, capitalize } from '@mui/material';
 import Image from 'next/image';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Badge from '@mui/material/Badge';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 export default function Header() {
 
@@ -55,8 +57,13 @@ export default function Header() {
                                     <AddShoppingCartIcon />
                                 </Badge>
                             </Link></li>
+                            <li className={styles.accountBtn}>
+                                <Button variant="text" sx={{ 'textTransform': 'capitalize' }} startIcon={<AccountCircleIcon />} endIcon={<KeyboardArrowDownIcon />} href="login">
+                                    Account
+                                </Button>
+                            </li>
                         </ul>
-                        <Button onClick={toggleNav}> <DensityMediumIcon />  </Button>
+                        <Button onClick={toggleNav} className={styles.toggleBtn}> <DensityMediumIcon />  </Button>
                     </Grid>
                 </Grid>
             </Container>

@@ -8,6 +8,7 @@ import Logo from "@/app/assets/images/logo.jpg";
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
+import Link from 'next/link';
 
 export default function footer() {
     return (
@@ -20,31 +21,30 @@ export default function footer() {
                                 <Image src={Logo} alt="footer logo" />
                             </a>
                             <p>
-                                Sk Services offers a comprehensive range of convenient solutions to meet your everyday needs. Specializing in mobile and DTH recharges, Skensures seamless connectivity and entertainment.
+                                SK Creation is an e-commerce platform and fashion brand offering a curated online shopping experience with a focus on Indian ethnic wear and traditional outfits.
                             </p>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={6} md={2} lg={2} xl={2}>
                         <div className={styles.widget2}>
-                            <h3>Useful Link</h3>
+                            <h3>About </h3>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li><a href="privacy.html">Privacy policy </a></li>
+                                <li><Link href="index.html">Home</Link></li>
+                                <li><Link href="/home/products">Latest Products</Link></li>
+                                <li><Link href="#">Careers</Link></li>
+                                <li><Link href="contact.html">Contact us</Link></li>
+                                <li><Link href="privacy.html">Privacy policy </Link></li>
                             </ul>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={6} md={2} lg={2} xl={2}>
                         <div className={styles.widget2}>
-                            <h3>Useful Link</h3>
+                            <h3>Help</h3>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li><a href="privacy.html">Privacy policy </a></li>
+                                <li><Link href="#">Payments</Link></li>
+                                <li><Link href="#">Shipping</Link></li>
+                                <li><Link href="#">Cancellation & Returns</Link></li>
+                                <li><Link href="#">FAQ</Link></li>
                             </ul>
                         </div>
                     </Grid>
@@ -59,7 +59,7 @@ export default function footer() {
                                 </li>
                                 <li>
                                     <CallIcon />
-                                    <p> +91 9876543210</p>
+                                    <p> +91 94164-01768</p>
                                 </li>
                                 <li>
                                     <EmailIcon />
@@ -71,7 +71,7 @@ export default function footer() {
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                         <div className={styles.copyright}>
-                            <p>© 2026 Sk Creation , Powered by <a href="#">Businesses Through Technology</a> </p>
+                            <p>© 2026 Sk Creation | All Rights Reserved </p>
                         </div>
                     </Grid>
                 </Grid>

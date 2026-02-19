@@ -407,13 +407,26 @@ body {
 }
 
 .login-container {
-  background: #ffffff;
+  background: #f0f0f0;
   width: 100%;
-  max-width: 400px;
+  max-width: 70%;
   padding: 40px 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   margin: 50px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.login-container .loginForm {
+  background-color: #ffff;
+  padding: 30px 25px 40px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.login-container .loginImage img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .login-header {
@@ -423,7 +436,7 @@ body {
 
 .login-header h1 {
   margin-bottom: 8px;
-  font-size: 28px;
+  font-size: 25px;
   color: #222;
   margin: 0;
 }
