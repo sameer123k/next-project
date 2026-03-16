@@ -35,8 +35,6 @@ export default function login() {
                     </Box>
                 </Grid>
             </Grid>
-
-
         </Box>
     )
 }
